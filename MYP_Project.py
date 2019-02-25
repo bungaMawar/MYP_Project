@@ -276,6 +276,67 @@ def brain_teasers():
                     print ("That is incorrect.")
                     truth = False
                     turn = turn + 1
+def name_game():
+    print ("This is a name game.")
+    name = input("Enter a name: ")
+    letter = name[0]
+    end = name[1::]
+    print()
+    if letter == 'a' or letter == 'A':
+        print(name)
+        print(name + ' Bo-Ba' + end)
+        print('Bonana Fanna Fo-Fa' + end)
+        print('Fe Fi Mo-Ma' + end)
+        print(name)
+    elif letter == 'e' or letter == 'E':
+        print (name)
+        print(name + ' Bo-Be' + end)
+        print('Bonana Fanna Fo-Fe' + end)
+        print('Fe Fi Mo-Me' + end)
+        print(name)
+    elif letter == 'i' or letter == 'I':
+        print (name)
+        print(name + ' Bo-Bi' + end)
+        print('Bonana Fanna Fo-Fi' + end)
+        print('Fe Fi Mo-Mi' + end)
+        print(name)
+    elif letter == 'o' or letter == 'O':
+        print (name)
+        print(name + ' Bo-Bo' + end)
+        print('Bonana Fanna Fo-Fo' + end)
+        print('Fe Fi Mo-Mo' + end)
+        print(name)
+    elif letter == 'u' or letter == 'U':
+        print (name)
+        print(name + ' Bo-Bu' + end)
+        print('Bonana Fanna Fo-Fu' + end)
+        print('Fe Fi Mo-Mu' + end)
+        print (name)
+    elif letter == 'm' or letter == 'M':
+        print (name)
+        print(name + ' Bo-B' + end)
+        print('Bonana Fanna Fo-F' + end)
+        print('Fe Fi Mo-' + end)
+        print (name)
+    elif letter == 'b' or letter == 'B':
+        print (name)
+        print(name + ' Bo-' + end)
+        print('Bonana Fanna Fo-F' + end)
+        print('Fe Fi Mo-M' + end)
+        print(name)
+    elif letter == 'f' or letter == 'F':
+        print (name)
+        print(name + ' Bo-B' + end)
+        print('Bonana Fanna Fo-' + end)
+        print('Fe Fi Mo-M' + end)
+        print(name)
+    else:
+        print (name)
+        print(name + ' Bo-B' + end)
+        print('Bonana Fanna Fo-F' + end)
+        print('Fe Fi Mo-M' + end)
+        print(name)
+
             
 loop = 0
 while loop == 0:      
@@ -303,6 +364,16 @@ while loop == 0:
             ay = input('Do you want to play again? (y/n): ')
             if ay == 'y' or ay == 'Y':
                 brain_teasers()
+                now = False
+            elif ay == 'n' or ay == 'N':
+                now = True
+   elif response == 4:
+        name_game()
+        now = False
+        while now == False:
+            ay = input('Do you want to play again? (y/n): ')
+            if ay == 'y' or ay == 'Y':
+                name_game()
                 now = False
             elif ay == 'n' or ay == 'N':
                 now = True
