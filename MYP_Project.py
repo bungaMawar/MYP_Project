@@ -340,9 +340,11 @@ def name_game():
             
 loop = 0
 while loop == 0:      
+    print()
     print ('Enter 1 for Tic-Tac-Toe')
     print ('Enter 2 for a guessing game')
     print ('Enter 3 for brain teasers')
+    print ('Enter 4 for the name game')
     print ('Enter 0 to exit.')
     response = int(input(''))
     if response == 1:
@@ -367,7 +369,10 @@ while loop == 0:
                 now = False
             elif ay == 'n' or ay == 'N':
                 now = True
-   elif response == 4:
+            else:
+                print('That is an invalid response')
+                now = False
+    elif response == 4:
         name_game()
         now = False
         while now == False:
@@ -377,6 +382,9 @@ while loop == 0:
                 now = False
             elif ay == 'n' or ay == 'N':
                 now = True
+            else:
+                print('That is an invalid response')
+                now = False
     elif response == 0:
         print('Thanks for coming!')
         quit()
