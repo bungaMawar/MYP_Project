@@ -1,4 +1,6 @@
 # MYP_Project
-MYP project
+## Description
+This project is for Middle Youth Programe Project for the IB program at SLHS. Most of these programs are basic python functions.
 
-This project is for Middle Youth Programe Project for the IB program at SLHS.
+## Content
+All python programs made using Jupyter Notebook. 
